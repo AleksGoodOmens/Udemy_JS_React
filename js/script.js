@@ -89,23 +89,36 @@
 //  incr++
 //  Decr--
 //!!! Prefix
-//  ++incr  
+//  ++incr
 //  --Decr
-let incr = 10,
-    decr = 10;
-console.log(` prefix ${++incr}, ${--decr}`);
-incr = 10;
-decr = 10;
-console.log(` postfix ${incr++}, ${decr--}`);
+// let incr = 10,
+//     decr = 10;
+// console.log(` prefix ${++incr}, ${--decr}`);
+// incr = 10;
+// decr = 10;
+// console.log(` postfix ${incr++}, ${decr--}`);
 
-//! symbol operator
-console.log(`5 % 2 = ${5 % 2}`);
-console.log(`5 * 2 === 10 ${5 * 2 === 10}`);
-const isChecked = true,
-    isClose = false;
-console.log(`operator isChecked && isClose ${isChecked && isClose}`);
-console.log(`operator isChecked || isClose ${isChecked || isClose}`);
-console.log(`5 + 2 != 7 ${5 + 2 != 7}`);
-console.log(`5 + 2 !== 7 ${5 + 2 !== 7}`);
+// //! symbol operator
+// console.log(`5 % 2 = ${5 % 2}`);
+// console.log(`5 * 2 === 10 ${5 * 2 === 10}`);
+// const isChecked = true,
+//     isClose = false;
+// console.log(`operator isChecked && isClose ${isChecked && isClose}`);
+// console.log(`operator isChecked || isClose ${isChecked || isClose}`);
+// console.log(`5 + 2 != 7 ${5 + 2 != 7}`);
+// console.log(`5 + 2 !== 7 ${5 + 2 !== 7}`);
 
-// I need complete githowto.com/ru
+//! I need complete githowto.com/ru
+let numberOfFilms = +prompt("how many films you already seen?", " ");
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
+let latestMovie = prompt("which movie you see last time", "");
+let movieMark = +prompt("which mark you give", '');
+personalMovieDB.movies[latestMovie] = movieMark;
+
+console.log(personalMovieDB);
