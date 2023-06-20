@@ -1,0 +1,22 @@
+.modals {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
+	gap: 50px;
+	max-width: 1440px;
+	margin: 100px auto;
+	button {
+		padding: 10px 20px;
+		color: var(--accent);
+		border: 1px solid var(--accent);
+		cursor: pointer;
+		transition: 0.5s;
+		&:focus {
+			box-shadow: 0px 0px 5px 15px var(--accent);
+		}
+
+		&:nth-child(even) {
+			background-color: var(--primary);
+		}
+	}
+}

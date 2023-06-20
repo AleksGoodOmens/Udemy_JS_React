@@ -1,0 +1,16 @@
+.wallpaper {
+	background: url(./Wallpaper.png) center / cover no-repeat;
+	text-align: center;
+	&__btn {
+		background-color: var(--accent);
+		border: 1px solid var(--secondary);
+		color: white;
+		max-width: fit-content;
+		padding: 10px 20px;
+		font-weight: 900;
+		display: block;
+		text-transform: capitalize;
+		text-decoration: none;
+		margin: 50px auto;
+	}
+}

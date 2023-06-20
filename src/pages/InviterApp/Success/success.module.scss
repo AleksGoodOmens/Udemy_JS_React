@@ -1,0 +1,28 @@
+.icon {
+	font-size: 300px;
+	color: green;
+	margin: 0 auto;
+	display: block;
+}
+.title {
+	text-align: center;
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+.subtitle {
+	margin-bottom: 30px;
+	text-align: center;
+	span {
+		color: var(--accent);
+	}
+}
+.btn {
+	width: 100%;
+	font-size: 1.5rem;
+	border-radius: 20px;
+	background-color: var(--accent);
+	color: var(--secondary);
+	padding: 20px 0;
+	font-weight: 900;
+	text-transform: uppercase;
+}

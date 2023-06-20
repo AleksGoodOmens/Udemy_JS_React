@@ -1,0 +1,40 @@
+.h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.body {
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	> * {
+		flex: 0 0 100px;
+		text-align: center;
+		padding: 20px 0;
+		&:first-child {
+			background-color: green;
+		}
+		&:last-child {
+			background-color: red;
+		}
+	}
+	div {
+		font-size: 30px;
+		color: var(--accent);
+	}
+}
+
+.label {
+	display: block;
+	max-width: 300px;
+	margin: 0 auto;
+	div {
+		text-align: center;
+		text-transform: capitalize;
+		margin-bottom: 10px;
+	}
+	input {
+		width: 100%;
+		padding: 10px 20px;
+		font-size: 18px;
+	}
+}

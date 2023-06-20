@@ -1,0 +1,37 @@
+.homePage {
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		margin: 50px 0;
+	}
+}
+.items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.item {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		color: var(--accent);
+	}
+	p {
+		flex: 1;
+	}
+	a {
+		display: block;
+		text-align: center;
+		max-width: fit-content;
+		margin: 10px auto;
+		padding: 10px 20px;
+		background-color: var(--accent);
+		text-decoration: none;
+	}
+}
+.video {
+	aspect-ratio: 16/9;
+}

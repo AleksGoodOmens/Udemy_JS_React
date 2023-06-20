@@ -1,0 +1,19 @@
+:root {
+	--primary: #000;
+	--primary-light: rgba(0, 0, 0, 0.5);
+	--secondary: #fff;
+	--secondary-light: rgba(255, 255, 255, 0.65);
+	--accent: rgb(255, 145, 0);
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 568px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;

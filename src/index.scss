@@ -1,0 +1,64 @@
+@import "./modules/helpers/variables/variables";
+@import "./modules/helpers/functions/functions";
+@import "./modules//helpers/mixins/mixins";
+@import url("https://fonts.googleapis.com/css?family=Rubik+Puddles:regular");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.wrapper {
+	padding: 0 15px;
+	background-color: white;
+}
+
+.App {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--secondary);
+	color: var(--primary);
+	&.dark {
+		--secondary: #000;
+		--secondary-light: rgba(0, 0, 0, 0.5);
+		--primary: #fff;
+		--primary-light: rgba(255, 255, 255, 0.65);
+		--accent: rgb(255, 145, 0);
+	}
+	main {
+		flex: 1;
+	}
+}
+.container {
+	padding: 0 15px;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -1;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: all 0.3s;
+}
+
+[data-show="true"] {
+	opacity: 1;
+	&.overlay {
+		z-index: 1;
+	}
+}
+button {
+	cursor: pointer;
+}

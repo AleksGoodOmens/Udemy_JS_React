@@ -1,0 +1,11 @@
+.button {
+	background-color: var(--secondary);
+	padding: rem(5) rem(10);
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		background-color: var(--primary);
+		color: var(--secondary);
+	}
+}

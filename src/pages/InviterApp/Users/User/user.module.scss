@@ -1,0 +1,43 @@
+@import "../../../../modules/helpers/mixins/mixins";
+@import "../../../../modules/helpers/variables/variables";
+
+.user {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__body {
+		@include md {
+			display: flex;
+		}
+		align-items: center;
+		gap: 20px;
+	}
+	img {
+		flex: 0 0 80px;
+		object-fit: cover;
+		object-position: top;
+		border-radius: 50%;
+	}
+
+	&__content {
+		flex: 1 0 fit-content;
+		width: fit-content;
+	}
+	&__name {
+		font-weight: 900;
+		font-size: 1.5rem;
+	}
+	&__email {
+		color: var(--primary-light);
+	}
+	svg {
+	}
+	&__btn {
+		font-size: 2rem;
+		transition: all 0.3s;
+		cursor: pointer;
+		&:hover {
+			color: var(--accent);
+		}
+	}
+}
