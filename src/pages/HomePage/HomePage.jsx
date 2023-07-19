@@ -1,10 +1,7 @@
-import { Link } from "react-router-dom"
-
 import styles from "./homePage.module.scss"
 
 import Ad from "./ad/Ad"
-
-import ReactPlayer from "react-player"
+import Tabs from "./Tabs/Tabs#"
 
 const items = [
 	{
@@ -57,25 +54,11 @@ function HomePage() {
 	return <main>
 		<section className={"container " + styles.homePage}>
 			<h1>home page</h1>
-			<Ad/>
+			<Ad />
+			<Tabs content={ items}/>
 	
 			<div className={styles.items}>
-				{items.map(item => {
-					const { title, text, link:{src, buttonText}} = item
-					return <div key={title} className={styles.item}>
-						<h2>{title}</h2>
-						{text.map((element, i) => {
-							return <p key={i}>{element}</p>
-						})}
-						<Link to={src}>{ buttonText}</Link>
-						<ReactPlayer
-							className={styles.video}
-							controls
-							// width={"100%"}
-							// height={"100%"}
-							url={item.video}/>
-					</div>
-				})}
+				
 			</div>
 
 		</section>
